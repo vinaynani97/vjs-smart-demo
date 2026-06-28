@@ -1,0 +1,127 @@
+{
+  "theme": "Dark/Light mixed (Primarily Dark Graphite with Signal Amber accents)",
+  "archetype": "4 (Swiss & High-Contrast) combined with Industrial/Luxury material feel",
+  "typography": {
+    "heading_font": "Clash Display",
+    "body_font": "Plus Jakarta Sans",
+    "mono_font": "JetBrains Mono",
+    "heading_strategy": "Tight tracking (-0.02em to -0.04em) on headings, bold/black weights for H1, regular/medium for body. Avoid centering text unless it's a specific short badge.",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tighter leading-[1.05]",
+      "h2": "text-4xl sm:text-5xl font-medium tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-medium tracking-tight leading-snug",
+      "body_lg": "text-lg text-neutral-300 leading-relaxed",
+      "body": "text-base text-neutral-400 leading-relaxed",
+      "overline": "text-xs font-mono uppercase tracking-[0.2em] text-primary-500"
+    }
+  },
+  "colors": {
+    "background_dark": "#0A0D14",
+    "background_light": "#F2F3F5",
+    "primary": {
+      "50": "#FFF3E5",
+      "100": "#FFE3CC",
+      "200": "#FFC599",
+      "300": "#FFA166",
+      "400": "#FF7A33",
+      "500": "#F55B14",
+      "600": "#DE4309",
+      "700": "#B83104",
+      "800": "#942403",
+      "900": "#7A1F05",
+      "950": "#420C00"
+    },
+    "neutral": {
+      "50": "#F2F3F5",
+      "100": "#E4E7EB",
+      "200": "#C9CED6",
+      "300": "#A8B1BD",
+      "400": "#8491A3",
+      "500": "#66758C",
+      "600": "#4B576E",
+      "700": "#364153",
+      "800": "#222B38",
+      "900": "#121821",
+      "950": "#0A0D14"
+    },
+    "surface": {
+      "dark_card": "bg-neutral-900/50 border border-neutral-800 backdrop-blur-md",
+      "dark_glass": "bg-neutral-950/70 border-b border-neutral-800/50 backdrop-blur-xl",
+      "light_card": "bg-white border border-neutral-200 shadow-sm"
+    }
+  },
+  "layout_spacing": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32 lg:py-40",
+    "bento_gap": "gap-4 md:gap-6",
+    "radius": {
+      "card": "rounded-none",
+      "button": "rounded-none",
+      "badge": "rounded-full"
+    },
+    "shadows": {
+      "ambient": "shadow-[0_0_40px_-10px_rgba(245,91,20,0.15)]",
+      "hard": "shadow-[4px_4px_0_0_rgba(245,91,20,1)]"
+    }
+  },
+  "components": {
+    "hero": {
+      "layout": "Grid split layout. Left side: overline, H1, description, CTA buttons. Right side: industrial imagery with overlapping stat cards.",
+      "background": "Deep graphite (neutral-950) with subtle grid overlay (bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px])."
+    },
+    "service_card": {
+      "layout": "Border-collapse bento grid or pure technical border boxes. Sharp corners (rounded-none). Left-aligned content. Icon on top, title, and descriptive text. On hover: subtle primary glow or inner border highlight."
+    },
+    "industry_card": {
+      "layout": "Image background with dark gradient overlay (bg-gradient-to-t from-black/80 to-transparent). Title at bottom. On hover, image scales up slightly. Sharp corners."
+    },
+    "product_card": {
+      "layout": "White or off-white background (if inside light section). Image at top with industrial gray background, details below. Distinct 'Request Quote' technical button."
+    },
+    "mega_menu": {
+      "layout": "Full width dropdown with grid layout inside. Links grouped by category. Transparent on load (if top is hero), transitions to solid bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800 on scroll."
+    },
+    "buttons": {
+      "primary": "bg-primary-500 text-white hover:bg-primary-600 uppercase tracking-widest text-sm font-semibold transition-colors duration-300 px-8 py-4",
+      "secondary": "bg-transparent border border-neutral-700 text-white hover:border-primary-500 hover:text-primary-500 uppercase tracking-widest text-sm font-semibold transition-colors px-8 py-4"
+    }
+  },
+  "motion": {
+    "scroll_reveal": "Use framer-motion for slight vertical translation (y: 20 -> 0) and opacity fade in. Stagger children for lists/grids.",
+    "hover_states": "Quick transitions (duration-200) for borders and colors. Subtle scales (scale-105) for images inside overflow-hidden containers.",
+    "parallax": "Subtle parallax on hero images and large background industrial images to create depth."
+  },
+  "visual_enhancers": {
+    "textures": "Use noise texture overlay on dark sections.",
+    "lines": "Use 1px horizontal/vertical lines (bg-neutral-800) to separate sections or act as container borders (technical schematic feel).",
+    "glows": "Use soft radial glows behind key tech elements, e.g., a massive soft primary glow bg-primary-500/10 blur-[100px] behind the hero image."
+  },
+  "icons_library": "@phosphor-icons/react",
+  "image_urls": {
+    "hero_industrial": {
+      "url": "https://images.pexels.com/photos/34207359/pexels-photo-34207359.jpeg",
+      "description": "Yellow robotic arm in action"
+    },
+    "hero_control_room": {
+      "url": "https://images.pexels.com/photos/25819964/pexels-photo-25819964.jpeg",
+      "description": "Dark retro industrial control panel"
+    },
+    "about_engineer": {
+      "url": "https://images.pexels.com/photos/32845692/pexels-photo-32845692.jpeg",
+      "description": "Factory worker using tablet"
+    },
+    "iot_circuit": {
+      "url": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48",
+      "description": "Circuit board components"
+    },
+    "automation_robot_2": {
+      "url": "https://images.pexels.com/photos/29320998/pexels-photo-29320998.jpeg",
+      "description": "Industrial robotic arm lab"
+    },
+    "control_panel_buttons": {
+      "url": "https://images.pexels.com/photos/32529354/pexels-photo-32529354.jpeg",
+      "description": "Control panel buttons"
+    }
+  },
+  "accessibility_notes": "Ensure text contrast on dark backgrounds using neutral-300/400. Ensure primary orange (#F55B14) is only used as an accent or background for white/black text if it passes contrast. Use white text over orange for buttons. Avoid pure black #000000, use #0A0D14. Always add aria-labels to buttons and links."
+}

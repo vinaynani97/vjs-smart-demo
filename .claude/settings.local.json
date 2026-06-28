@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /Users/vinaypamu/Downloads/VJS-Smart-white/frontend/public/ 2>/dev/null | grep -v '^total' | grep -v '^d')",
+      "Read(//Users/vinaypamu/Downloads/VJS-Smart-white/frontend/public/**)",
+      "Read(//Users/vinaypamu/Downloads/VJS-Smart-white/frontend/src/components/ui/**)"
+    ]
+  }
+}
